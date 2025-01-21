@@ -4,12 +4,24 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var skySize = 100;
+var dotX= 1;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
+noStroke();
  
-  background(255,255,255,0);
+ //sun and background
+  background(255,0,170);
+  fill(155,0,103);
+  ellipse(200,298, skySize, skySize);
+  
+  
+  //small circle
+  fill(255,181,230);
+  ellipse(dotX, 255,102,102);
+  
+  
   
    if(mousePressed){
     showXYPositions();
@@ -17,11 +29,12 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
   
-  fireworkX = fireworkX + 1;
-
+  skySize += 3 ;
+  dotX += 1;
+  
 }
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)

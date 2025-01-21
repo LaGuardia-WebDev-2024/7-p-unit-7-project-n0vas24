@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #F3CFC6;
   text-align: center;
   color: white;
 }
@@ -17,4 +17,17 @@ body {
   text-align: left;
   justify-content: space-around;
 }
+html{
+  height: 100%;
+  width: 100%;
+}
 
+h2{
+  color: black;
+  text-align: center;
+}
+
+h1:hover {
+  opacity: 1;
+  background-color: #9F2B68
+}
